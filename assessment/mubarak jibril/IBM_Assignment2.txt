@@ -1,0 +1,40 @@
+import random
+import time
+result =98.6
+r = float(result)
+print('normal temperature:',r)
+startValue=90.0
+endValue=99.0
+temp=random.randint(startValue,endValue)
+print('temperature:',temp)
+result1 =60
+r1 = result1
+print('normal humidity:',r1)
+startValue1=30
+endValue1=70
+humidity=random.randint(startValue1,endValue1)
+print('humidity:',humidity)
+startValue2=20
+endValue2=70
+humidity1=random.randint(startValue2,endValue2)
+print('dummy humidity:',humidity1)
+r2=30
+if temp >r:
+  print("high temperature")
+  for i in range(3):
+    time.sleep(1)
+    print("\a")
+elif(temp < r):
+ print("low temperature")
+elif(temp == r):
+ print("normal temperature")
+else:
+ print("normal temperature")
+if humidity >r1:
+  print("high humidity")
+elif(humidity1 < r2):
+ print("low humidity")
+elif(humidity == r1):
+ print("normal humidity")
+else:
+ print("normal humidity")
